@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="formscript.js">
+     
+    </script>
+</head>
+<body>
+    <form name="myform" onsubmit="return checkData()">
+       
+        <div>
+            <label for="fname">Enter your Username:</label>
+            <input type="text" name="fname" id="fname"/>
+        </div>
+        <div>
+            <label for="fmail">Enter your Mail</label>
+            <input type="text" name="fmail" id="fmail"/>
+        </div>
+        <div>
+            <label for="fcont">Enter your conatcct no</label>
+            <input type="number" name="fcont" id="fcont"/>
+        </div>
+        <div>
+            <label for="fpass">Enter your password</label>
+            <input type="password" name="fpass" id="fpass"/>
+        </div>
+        <div>
+            <label> select your classification</label>
+            <input type="checkbox" name="edu" value="ssc">SSC
+            <input type="checkbox" name="edu" value="hsc">HSC
+            <input type="checkbox" name="edu" value="ug">UG
+            <input type="checkbox" name="edu" value="pg">PG
+        </div>
+        <button type="submit">submit</button>
+        </form>
+
+
+</body>
+</html>

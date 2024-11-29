@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .forms{
+            border: 5px solid darkcyan;
+    border-width: 8px;
+    height: 160px;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    margin-top: 25%;
+}
+    </style>
+</head>
+<body>
+    <form class="forms">
+    <label for="num1"><b>Enter your First Number:</b></label>
+    <br>
+    <input type="text" name="num1" id="num1"><br>
+    <br>
+    <label for="num2"><b>Enter Your Second Number:</b></label>
+    <br>
+    <input type="text" name="num2" id="num2"> <br>
+   
+    <button type="button" onclick="Addition()" style="color: chartreuse; background-color: black;" ><b>ADD</b></button>
+    <button type="button" onclick="Subtraction()" style="color: chartreuse;background-color: rgb(8, 8, 8);"><b>SUB</b></button>
+    <button type="button" onclick="Multiplication()" style="color: chartreuse; background-color: rgb(8, 8, 8);"><b>MUL</b></button>
+    <button type="button" onclick="Division()" style="color: chartreuse; background-color: rgb(12, 12, 11);"><b></b>DIV</button><br>
+    <br>
+    <div class="result"><b>Result:</b> <b id="res"></b>
+    <input type="text" name="result" id="res" style="width: 75px;"> 
+    </div>
+
+     
+</form>
+
+
+<script>
+    function Addition(){
+        let num1= document.getElementById("num1").value;
+        let num2= document.getElementById("num2").value;     
+       document.getElementById("res").innerHTML=parseInt(num1)+parseInt(num2);
+    }
+
+    function Subtraction(){
+        let num1= document.getElementById("num1").value;
+        let num2= document.getElementById("num2").value; 
+        document.getElementById("res").innerHTML=parseInt(num1)+parseInt(num2);      
+    }
+    function Multiplication(){
+        let num1= document.getElementById("num1").value;
+        let num2= document.getElementById("num2").value;
+        document.getElementById("res").innerHTML=parseInt(num1)+parseInt(num2);      
+    }
+    function Division(){
+        let num1= document.getElementById("num1").value;
+        let num2= document.getElementById("num2").value;
+        document.getElementById("res").innerHTML=parseInt(num1)+parseInt(num2);
+
+    }
+</script>
+</body>
+</html>
