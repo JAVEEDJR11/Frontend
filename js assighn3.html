@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        height: 150px;
+        width: 300px;
+        box-shadow: 0px 0px 12px;
+        cursor: pointer;
+        }
+        .parent{
+            display: flex;          
+               flex-direction: column;
+               align-items: center;
+               text-align: center;
+               padding: 60px;
+  
+        }   
+        button{
+            background-color: black;
+            color: chartreuse;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 25px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #555555;
+        }
+    
+</style>
+<body>
+    <div class="parent">
+    <h1>ToggleImage</h1>
+        <div class="image"></div>
+        <img src="../images/naruto-uzumaki-3840x2160-18685.jpg" alt="nar1" id="1"><br>
+        <button type="button" onclick="change()"><b>Toggle</b></button>
+        </div>
+
+    </div>
+    
+
+    <script>
+        function change(){
+            let data=document.getElementById("1").alt;
+            console.log(data); 
+            let data1="goku";
+            
+
+            if(data === "nar1"){
+                document.getElementById("1").src="../images/tanjiro-kamado-3840x2160-18381.jpg";
+                document.getElementById("1").alt="goku";                
+            }
+            else if(data === data1){
+                document.getElementById("1").src="../images/naruto-uzumaki-3840x2160-18685.jpg";
+                document.getElementById("1").alt="nar1";
+
+            }
+        }
+    </script>
+</body>
+</html>
