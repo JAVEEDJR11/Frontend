@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .traff {
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+        border: 5px solid black;
+        background-color: red;
+        align-items: center;
+
+    }
+
+    .parent {
+        border: 5px solid black;
+        width: 160px;
+        height: 500px;
+        margin: auto;
+
+    }
+
+    .traff2 {
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+        border: 5px solid black;
+        background-color: rgb(230, 255, 2);
+        align-items: center;
+    }
+
+    .traff3 {
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+        border: 5px solid black;
+        background-color: rgb(4, 255, 4);
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="traff" id="1">
+
+            <!-- <input type="text" value="green ">
+    <input type="text" value="yello"> -->
+        </div>
+        <div class="traff2" id="2">
+
+
+        </div>
+        <div class="traff3" id="3">
+
+        </div>
+    </div>
+</body>
+<script>
+    function stop() {
+         document.getElementById("1").style.backgroundColor="red";
+         document.getElementById("2").style.backgroundColor="white";
+         document.getElementById("3").style.backgroundColor="white";
+
+ setTimeout(go,3000);
+    }
+    function go(){
+        document.getElementById("1").style.backgroundColor="white";
+        document.getElementById("2").style.backgroundColor="yellow";
+        document.getElementById("3").style.backgroundColor="white";
+         setTimeout(ready,3000);
+    }
+    function ready(){
+        document.getElementById("1").style.backgroundColor="white";
+        document.getElementById("2").style.backgroundColor="white";
+        document.getElementById("3").style.backgroundColor="green";
+         setTimeout(stop,3000);
+    }
+    stop();
+</script>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        height: 400px;
+        width: 900px;
+        box-shadow: 0px 0px  13px;
+        cursor: pointer;
+        
+        
+    }
+    .parent{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          text-shadow: 0px 0px 3px;
+           
+
+    }
+    button{
+        margin: 5px;
+        padding: 10px 15px;
+        background-color: darkcyan;
+        box-shadow: 0px 0px 15px;
+        font-size:25px;
+
+              
+    }
+</style>
+<body>
+    
+    <div class="parent">
+        <h1 style="border: 7px solid black;">ToggleImage2</h1>
+       
+            <div class="image"></div>
+            <img src="../images/naruto-uzumaki-3840x2160-18685.jpg" alt="nar1" id="1"><br>
+            <p id="2"><b>Naruto</b></p>
+     <div class="button">
+        <button type="button" onclick="changenaru1()"><b>Naruto</b></button>
+        <button type="button" onclick="changegoku()"><b>Goku</b></button>
+        <button type="button" onclick="changesasuke()"><b>Sasuke</b></button>
+        <button type="button" onclick="changesungjinwoo()"><b>Sungjinwoo</b></button>
+ </div>       
+
+
+ <script>
+        function changenaru1(){
+            document.getElementById("1").src="../images/naruto-uzumaki-3840x2160-18685.jpg";
+            document.getElementById("2").innerHTML="NarutoUzumaki";
+        }
+        function changegoku(){
+            document.getElementById("1").src="../images/goku-dragon-ball-3840x2160-19055.jpg";
+            document.getElementById("2").innerHTML="Goku";
+        }
+        function changesasuke(){
+            document.getElementById("1").src="../images/sasuke-uchiha-3840x2160-17605.png ";
+            document.getElementById("2").innerHTML="Sasuke";
+        }
+        function changesungjinwoo(){
+            document.getElementById("1").src="../images/sung-jinwoo-solo-3840x2160-17972.jpg";
+            document.getElementById("2").innerHTML="Jinwoo";
+        }
+
+ </script>
+
+</body>
+</html>
