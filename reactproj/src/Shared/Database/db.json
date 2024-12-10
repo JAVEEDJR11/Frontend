@@ -1,0 +1,47 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "pname": "laptop",
+      "price": 87400,
+      "company": "lenova"
+    },
+    {
+      "id": "2",
+      "pname": "Usb",
+      "price": 40000,
+      "company": "asus"
+    },
+    {
+      "id": "3",
+      "pname": "cpu",
+      "price": 30000,
+      "company": "TUF"
+    },
+    {
+      "id": "4",
+      "pname": "printer",
+      "price": 97000,
+      "company": "Dell"
+    },
+    {
+      "id": "eff5",
+      "pname": "jarvis",
+      "price": "500000",
+      "company": "TATA"
+    }
+  ],
+  "Users": [
+    {
+      "id": "3",
+      "userid": "23",
+      "userpass": "halit@123"
+    },
+    {
+      "id": "4",
+      "userid": "26",
+      "userpass":"loganatha@765"
+
+    }
+  ]
+}
